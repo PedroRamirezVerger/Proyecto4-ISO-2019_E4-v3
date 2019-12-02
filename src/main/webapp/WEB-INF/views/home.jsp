@@ -48,21 +48,21 @@
     <div class="container">
 
       <form class="form-signin">
-        <h2 class="form-signin-heading">Introduce tus datos para iniciar sesión</h2>
+        <h2 class="form-signin-heading">Introduce tus datos para iniciar sesiï¿½n</h2>
         <label for="inputDNI" class="sr-only">DNI</label>
         <input type="text" id="inputDNI" name = "dni" class="form-control" placeholder="DNI" required autofocus>
-        <label for="inputPassword" class="sr-only">Contraseña</label>
-        <input type="password" id="inputPassword" name = "password" class="form-control" placeholder="Contraseña" required>
+        <label for="inputPassword" class="sr-only">Contraseï¿½a</label>
+        <input type="password" id="inputPassword" name = "password" class="form-control" placeholder="Contraseï¿½a" required>
         <div>
         <label id="labelMalLogin"></label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="remember-me"> Recordar contraseña
+            <input type="checkbox" value="remember-me"> Recordar contraseï¿½a
           </label>
         </div>
         
-        <a id="logearseBtn" type="submit" class="btn btn-lg btn-primary btn-block">Iniciar sesión</a>
+        <a id="logearseBtn" type="submit" class="btn btn-lg btn-primary btn-block">Iniciar sesiï¿½n</a>
         <a href = "/registro" class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</a>
         
       </form>
@@ -130,7 +130,7 @@
 		sessionStorage.usuario=JSON.stringify(jso);
 		if(jso.type=="CredencialesMal"){
 			console.log("Credenciales incorrectas");
-	        $('#labelMalLogin').html("Credenciales inválidas. Por favor vuelva a introducir los datos");
+	        $('#labelMalLogin').html("Credenciales invï¿½lidas. Por favor vuelva a introducir los datos");
 	        $('#labelMalLogin').css("color", "red");
 	        $('#inputDNI').val("");
 	        $('#inputPassword').val("");
